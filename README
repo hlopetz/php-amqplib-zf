@@ -1,11 +1,13 @@
-PHP library implementing Advanced Message Queuing Protocol (AMQP).
+It's a fork of PHP library implementing Advanced Message Queuing Protocol (AMQP).
 
-The library is port of python code of py-amqplib
+The inital library is a port of python code of py-amqplib
 http://barryp.org/software/py-amqplib/
 
-It have been tested with RabbitMQ server.
+It have been tested with RabbitMQ server and Zend Framework 1.10.8.
 
-Project home page: http://code.google.com/p/php-amqplib/
+This project home page is https://bitbucket.org/hlopetz/php-amqplib-zf
+
+Initial project home page: http://code.google.com/p/php-amqplib/
 
 For discussion, please join the group:
 
@@ -13,8 +15,6 @@ http://groups.google.com/group/php-amqplib-devel
 
 For bug reports, please use bug tracking system at the project page.
 
-Patched are very welcome!
+Patches are very welcome!
 
-Author: Vadim Zaliva <lord@crocodile.org>
-
-
+Author: Vadim Zaliva <lord@crocodile.org> and contributors
