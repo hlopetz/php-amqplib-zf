@@ -5,7 +5,7 @@ if(!defined('SIMPLE_TEST'))
 require_once(SIMPLE_TEST . 'unit_tester.php');
 require_once(SIMPLE_TEST . 'reporter.php');
 
-set_include_path('../..' . PATH_SEPARATOR . get_include_path());
+set_include_path('..' . PATH_SEPARATOR . get_include_path());
 
 if(((int)4294967296)!=0)
     $arch_bits = "64bit";

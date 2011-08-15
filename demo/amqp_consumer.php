@@ -7,7 +7,7 @@
  * @author Sean Murphy<sean@iamseanmurphy.com>
  */
 
-set_include_path('../..' . PATH_SEPARATOR . get_include_path());
+set_include_path('..' . PATH_SEPARATOR . get_include_path());
 include 'Zend/Loader/Autoloader.php';
 $loader = Zend_Loader_AutoLoader::getInstance();
 $loader->setFallbackAutoloader(true);
