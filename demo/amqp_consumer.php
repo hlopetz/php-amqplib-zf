@@ -22,6 +22,7 @@ $EXCHANGE = 'router';
 $QUEUE = 'msgs';
 $CONSUMER_TAG = 'consumer';
 
+AMQP_Misc::enableDebug();
 $conn = new AMQP_Connection($HOST, $PORT, $USER, $PASS);
 $ch = $conn->channel();
 $ch->access_request($VHOST, false, false, true, true);

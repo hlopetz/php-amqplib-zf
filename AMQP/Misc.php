@@ -58,17 +58,35 @@ class AMQP_Misc
         "90,31" => "Channel.tx_rollback_ok"
     );
 
+    private static $_debugEnabled = false;
+
+    /**
+     * @param string $s
+     */
     public static function debug_msg($s)
     {
-        error_log($s);
+        if (self::$_debugEnabled)
+        {
+            error_log($s);
+        }
+    }
+
+    /**
+     * @param bool $yes
+     */
+    public static function enableDebug($yes = true)
+    {
+        self::$_debugEnabled = $yes;
     }
 
     public static function methodSig($a)
     {
-        if(is_string($a))
+        if (is_string($a))
+        {
             return $a;
-        else
+        } else {
             return sprintf("%d,%d",$a[0] ,$a[1]);
+        }
     }
 
     /**
