@@ -108,6 +108,10 @@ class AMQP_Connection extends AMQP_Channel_Abstract
             {
                 throw new Exception ("Error sending data");
             }
+            if($written === 0 && $len > 0)
+            {
+                throw new Exception("Error sending data");
+            }
             $len = $len - $written;
             if($len>0)
                 $data=substr($data,0-$len);
