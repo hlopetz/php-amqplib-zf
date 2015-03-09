@@ -1,0 +1,9 @@
+{
+  "name": "hlopetz/php-amqplib-zf",
+  "description": "php-amqplib-zf",
+  "autoload": {
+    "psr-0": {
+      "AMQP_": "."
+    }
+  }
+}
